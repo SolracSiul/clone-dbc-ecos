@@ -1,5 +1,174 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+.container{
+    background-color: yellow;
+    margin: auto;
+    max-width: 1200px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: url(imgs/patternECOStransparente.png), linear-gradient(to bottom right, #295ba7, #78b454);
+    height: 78px;
+}
+.header-left{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+}
+.botao-text{
+    margin-left: 10px;
+    display: flex;
+    cursor: pointer;
+}
+.botao-text:hover{
+    background-color: rgba(0, 0, 0, 0.5)
+}
+.botao div{
+    margin-left: 15px;
+    width: 18px;
+    height: 3px;
+    background: #fff;
+    margin-top: 6px;
+    border-radius: 23%;
+}
+.botao div:hover{
+    cursor: pointer;
+}
+.header-left p{
+    color: white;
+    font-size: 24px;
+    margin-top:4px;
+    margin-left: 10px;
+}
+.header-left input[type=text]{
+    margin-left: 25px;
+    height: 26px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 1px;
+    border: none;
+}
+.header-left i{
+    position: absolute;
+    margin-left: 616px;
+    color: white;
+}
+input::placeholder{
+    color: white;
+
+}
+
+.header-right{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    width: 280px;
+    background-color: red;
+}
+main{
+    margin: 10px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 2fr 1fr;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+}
+.left .legenda{
+    background-color: yellowgreen;
+    text-transform: uppercase;
+    color: black;
+    font: roboto;
+    padding: 10px;
+    width: 100%;
+    border-bottom: 2px solid black;;
+}
+.left .cards{
+    padding: 10px;
+}
+.card-total{
+    height: 200px; 
+    display: flex;
+    border-bottom: 10px solid red !important;
+    /* esse border bottom deu certo só remover as cores depois */
+}
+.card-image{
+    background-color: violet !important;
+    width: 200px;
+}
+.card-text{
+    background-color: rgba(31, 180, 100, 0.696) !important;
+    width: 550px;
+}
+
+.left .cards div:nth-child(even){
+    background-color: rgb(48, 42, 54);
+    height: 200px;
+}
+.left .cards div:nth-child(odd){
+    height: 200px;
+    background-color: brown;
+}
+.right-1{
+    display: flex;
+    flex-direction: column;
+}
+.right-1 p{
+    background-color: yellowgreen;
+    text-transform: uppercase;
+    color: black;
+    font: roboto;
+    padding: 10px;
+    border-bottom: 2px solid black;;
+}
+.sys-law{
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 375px;
+    gap: 10px;
+    background-color: rgb(70, 70, 156);
+    margin-bottom: 10px;
+}  
+.sys-law div{
+    background-color: blueviolet;
+}
+.last-birth{
+    height: 400px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+.last-people{
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 675px;
+    gap: 10px;
+    background-color: rgb(70, 70, 156);
+    margin-bottom: 10px;
+} 
+.last-people div{
+    display: flex;
+    background-color: gray;
+    height: 107px;
+}
+.last-people-image{
+    width: 110px;
+    background-color: red !important;
+}
+.last-people-text{
+    width: 240px;
+    background-color: green !important;
+}
+
