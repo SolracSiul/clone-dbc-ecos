@@ -195,7 +195,7 @@ main{
 
 .legenda{
     margin-bottom: 3px;
-    
+    border-bottom: 4px solid #EFF3F8;
 }
 /* parte final */
 .last-birth{
