@@ -4,9 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 .container{
-    background-color: yellow;
     margin: auto;
     max-width: 1200px;
 }
@@ -16,7 +14,7 @@ header{
     align-items: center;
     padding: 20px;
     background: url(imgs/patternECOStransparente.png), linear-gradient(to bottom right, #295ba7, #78b454);
-    height: 78px;
+    height: 45px;
 }
 .header-left{
     display: flex;
@@ -34,45 +32,64 @@ header{
 }
 .botao div{
     margin-left: 15px;
-    width: 18px;
+    width: 14px;
     height: 3px;
     background: #fff;
-    margin-top: 6px;
-    border-radius: 23%;
+    margin-top: 4px;
 }
 .botao div:hover{
     cursor: pointer;
 }
 .header-left p{
     color: white;
-    font-size: 24px;
+    font-size: 14px;
     margin-top:4px;
     margin-left: 10px;
 }
 .header-left input[type=text]{
+    margin-top: 3px;
     margin-left: 25px;
-    height: 26px;
-    width: 400px;
+    height: 20px;
+    width: 300px;
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 1px;
     border: none;
 }
 .header-left i{
     position: absolute;
-    margin-left: 616px;
+    margin-left: 450px;
     color: white;
+    margin-top: 4px;
+    font-size: 12px;
 }
 input::placeholder{
     color: white;
-
+    font-size: 10px;
 }
-
 .header-right{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 5px;
     width: 280px;
-    background-color: red;
+}
+.header-right i{
+    font-size: 18px;
+    color: white;
+    padding-left: 220px;
+    margin-top: 6px;
+}
+.foto{
+    width: 25px;
+    height: 30px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+    
+}
+.foto img{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 main{
     margin: 10px;
@@ -83,48 +100,46 @@ main{
 .left{
     display: flex;
     flex-direction: column;
+    background-color: whitesmoke;
 }
 .left .legenda{
-    background-color: yellowgreen;
+    background-color: whitesmoke;
     text-transform: uppercase;
     color: black;
     font: roboto;
     padding: 10px;
     width: 100%;
-    border-bottom: 2px solid black;;
 }
-.left .cards{
+/* .left .main{
     padding: 10px;
-}
+} */
 .card-total{
-    height: 200px; 
+    margin: 10px;
     display: flex;
-    border-bottom: 10px solid red !important;
-    /* esse border bottom deu certo só remover as cores depois */
-}
-.card-image{
-    background-color: violet !important;
-    width: 200px;
+    flex-direction: row;
+    background-color: white;
+    height: 200px;
 }
 .card-text{
-    background-color: rgba(31, 180, 100, 0.696) !important;
-    width: 550px;
+    display: inline;
 }
-
-.left .cards div:nth-child(even){
-    background-color: rgb(48, 42, 54);
-    height: 200px;
+.borda-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-.left .cards div:nth-child(odd){
-    height: 200px;
-    background-color: brown;
+.parte1 h3{
+    margin-top: 25px;
+}
+.parte1 h4{
+    margin-bottom: 22px;
 }
 .right-1{
     display: flex;
     flex-direction: column;
 }
-.right-1 p{
-    background-color: yellowgreen;
+.cabecalho{
+    background-color: whitesmoke;
     text-transform: uppercase;
     color: black;
     font: roboto;
@@ -141,7 +156,24 @@ main{
     margin-bottom: 10px;
 }  
 .sys-law div{
-    background-color: blueviolet;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    border-radius: 5%;
+}
+.sys-law i{
+    font-size: 16px;
+    color: forestgreen;
+}
+.sys-law p{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: forestgreen;
 }
 .last-birth{
     height: 400px;
@@ -155,12 +187,12 @@ main{
     grid-template-columns: 1fr;
     height: 675px;
     gap: 10px;
-    background-color: rgb(70, 70, 156);
+    background-color: blueviolet;
     margin-bottom: 10px;
 } 
 .last-people div{
     display: flex;
-    background-color: gray;
+    flex-direction: row;
     height: 107px;
 }
 .last-people-image{
@@ -170,5 +202,8 @@ main{
 .last-people-text{
     width: 240px;
     background-color: green !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
