@@ -1,0 +1,17 @@
+<p>Ultimos aniversariantes</p>
+                    <div class="last-people">
+                        <div class="last-people-card">
+                            <div class="last-people-image">
+                                <img src="" alt="foto de sorak">
+                            </div>
+                            <div class="last-people-text">
+                                <div class="last-people-text-dados">
+                                    <p>Luis Carlos Rodriugues Silva</p>
+                                    <p>crluis521@gmail.com</p>
+                                </div>
+                                <div class="last-people-aniv">
+                                    <i class="fa-solid fa-cake-candles"></i>
+                                    <p>30 de junho</p>
+                                </div>
+                            </div>
+                        </div>

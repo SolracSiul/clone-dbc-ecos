@@ -84,7 +84,6 @@ input::placeholder{
     border-radius: 100%;
     overflow: hidden;
     position: relative;
-    
 }
 .foto img{
     position: absolute;
@@ -152,7 +151,7 @@ main{
     grid-template-columns: 1fr 1fr 1fr;
     height: 375px;
     gap: 10px;
-    background-color: rgb(70, 70, 156);
+    background-color: whitesmoke;
     margin-bottom: 10px;
 }  
 .sys-law div{
@@ -175,35 +174,49 @@ main{
     font-size: 12px;
     color: forestgreen;
 }
-.last-birth{
-    height: 400px;
-    background-color: aqua;
-    display: flex;
-    flex-direction: column;
+.legenda{
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
 }
-.last-people{
+/* parte final */
+.last-birth{
     padding: 15px;
     display: grid;
     grid-template-columns: 1fr;
     height: 675px;
-    gap: 10px;
-    background-color: blueviolet;
-    margin-bottom: 10px;
+    grid-gap:1px;
+    background-color: whitesmoke;
 } 
-.last-people div{
+.last-birth > div{
+    height: 90px;
     display: flex;
-    flex-direction: row;
-    height: 107px;
+    border-bottom: 2px solid black;
 }
-.last-people-image{
-    width: 110px;
-    background-color: red !important;
+.last-birth .last-birth-img{
+    width: 100px;
 }
-.last-people-text{
-    width: 240px;
-    background-color: green !important;
+.last-birth .last-birth-dados{
+    width: 270px;
+}
+.last-birth .last-birth-dados p.name{
+    padding-bottom: 10px;
+    font: bold;
+}
+.last-birth-dados-aniv{
+    padding-top: 22px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    align-items: end;
 }
-
+.last-birth-dados-aniv p{
+    padding-left: 10px;
+}
+.last-birth .last-birth-img img{
+    width: 60px;
+    height: 80px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin:5px 20px 5px 20px;
+}
